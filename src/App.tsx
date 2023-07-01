@@ -5,15 +5,19 @@ import './App.css'
 import imagen1 from './assets/img/png/character2.png'
 
 import ScrollContext from './utils/context/scroll_context';
-
+import introduction from './data/introduction.json'
 function App() {
   const scrolling = useContext(ScrollContext);
   const isAtTop = scrolling?.isAtTop || false;
+
   return (
     <>
       <header className={`header ${isAtTop ? 'visible' : ''}`}>
         <h1 className="header-title">Hola, soy Luis</h1>
-        <p>Bienvenido a mi página web, aquí encontrarás todo lo necesario para conocerme</p>
+
+        <p className="intro-paragraph">
+          {introduction.introText}
+        </p>
       </header>
 
       <section id="content">

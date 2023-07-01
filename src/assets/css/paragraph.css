@@ -1,0 +1,26 @@
+.intro-paragraph {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text-color);
+    justify-content: center;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.intro-paragraph strong {
+    font-weight: bold;
+}
+
+.intro-paragraph em {
+    font-style: italic;
+}
+
+.intro-paragraph a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.intro-paragraph a:hover {
+    text-decoration: underline;
+}
