@@ -1,0 +1,79 @@
+/* Tema basado en la paleta de colores y fuente personalizada */
+:root {
+  --primary-color: #0C134F;
+  --secondary-color: #1D267D;
+  --accent-color: #5C469C;
+  --background-color: #D4ADFC;
+  --text-color: #FFFFFF;
+  --title-color: #FFD700;
+  /* Color amarillo como título destacado */
+}
+
+/* Agregar regla @font-face para la fuente personalizada */
+@font-face {
+  font-family: 'GamerFont';
+  src: url('./assets/fonts/Space_Mono/SpaceMono-Regular.ttf');
+}
+
+/* Estilo del cuerpo del documento */
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: 'GamerFont', Arial, sans-serif;
+  /* Aplicar fuente personalizada */
+  line-height: 1.6;
+}
+
+/* Estilo de los títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+/* Estilo de enlaces */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Estilo de los botones */
+.button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Estilo de la sección destacada */
+.featured-section {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Estilo de la sección de pie de página */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px 0;
+  text-align: center;
+}
