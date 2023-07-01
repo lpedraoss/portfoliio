@@ -6,6 +6,7 @@
     /* Ajusta el valor según la altura de tu encabezado */
     scroll-margin-top: 100px;
     /* Ajusta el valor según la altura de tu encabezado */
+
 }
 
 .scroll-down {
@@ -29,6 +30,7 @@
 
 .scroll-down a {
     animation: bounce 1.5s infinite;
+    color: var(--text-color);
 }
 
 @keyframes bounce {
