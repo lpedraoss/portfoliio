@@ -1,13 +1,14 @@
 
 
+import { useContext } from 'react';
 import './App.css'
 import imagen1 from './assets/img/png/character2.png'
-import useScrollVisibility from './utils/scroll'
+
+import ScrollContext from './utils/context/scroll_context';
 
 function App() {
-  const isAtTop = useScrollVisibility();
-
-
+  const scrolling = useContext(ScrollContext);
+  const isAtTop = scrolling?.isAtTop || false;
   return (
     <>
       <header className={`header ${isAtTop ? 'visible' : ''}`}>
@@ -28,7 +29,6 @@ function App() {
           <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
             <path d="M12 3L12 21" />
             <path d="M18 15L12 21L6 15" fill='white' />
-
           </svg>
           Scroll down
         </a>

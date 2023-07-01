@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
-const useScrollVisibility = () => {
+const useScrollVisibility = (): boolean => {
     const [isAtTop, setIsAtTop] = useState(true);
 
     useEffect(() => {
-        const handleScroll = () => {
+        const handleScroll = (): void => {
             setIsAtTop(window.pageYOffset <= 0);
         };
 
@@ -16,5 +16,4 @@ const useScrollVisibility = () => {
 
     return isAtTop;
 };
-
 export default useScrollVisibility;
