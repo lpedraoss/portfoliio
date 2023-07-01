@@ -3,7 +3,7 @@
 import { useContext } from 'react';
 import './App.css'
 import imagen1 from './assets/img/png/character2.png'
-
+import imagen2 from './assets/img/png/character.png'
 import ScrollContext from './utils/context/scroll_context';
 import introduction from './data/introduction.json'
 function App() {
@@ -13,18 +13,20 @@ function App() {
   return (
     <>
       <header className={`header ${isAtTop ? 'visible' : ''}`}>
+        <picture className='header-picture'>
+          <img src={imagen1} alt="Example" />
+        </picture>
         <h1 className="header-title">Hola, soy Luis</h1>
 
-        <p className="intro-paragraph">
-          {introduction.introText}
-        </p>
       </header>
-
+      <p className="intro-paragraph">
+        {introduction.introText}
+      </p>
       <section id="content">
         <h1>Contenido del portfolio</h1>
         {/* Resto del contenido */}
         <picture>
-          <img src={imagen1} alt="Example" />
+          <img src={imagen2} alt="Example" />
         </picture>
       </section>
 
