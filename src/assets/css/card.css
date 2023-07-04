@@ -1,0 +1,34 @@
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    animation: heartbeat 1.5s infinite;
+  }
+  
+  .card a, .card h2, .card p {
+    color: var(--text-color);
+  }
+  
+  @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  
