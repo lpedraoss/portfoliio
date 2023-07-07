@@ -1,10 +1,13 @@
+import imagen from '../../assets/img/png/character3.png'
+
 function CardProject() {
     return (
         <>
             <article className="card">
-                <p>
-                    esto es un card
-                </p>
+               <picture>
+                <img src={imagen} alt='mi proyecto 1'></img>
+               </picture>
+                
             </article>
         </>
     )

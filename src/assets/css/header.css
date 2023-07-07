@@ -14,7 +14,7 @@
 .header p {
     opacity: 0;
     transform: translateY(-30px);
-    animation: fadeInUp 2s forwards;
+    animation: fadeInUp 5s forwards;
 }
 
 @keyframes fadeInUp {

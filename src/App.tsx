@@ -19,9 +19,7 @@ function App() {
         <h1>Contenido del portfolio</h1>
         {/* Resto del contenido */}
         <CardProject></CardProject>
-        <picture>
-          <img src={imagen2} alt="Example" />
-        </picture>
+       
       </section>
       <GoToDown></GoToDown>
 
