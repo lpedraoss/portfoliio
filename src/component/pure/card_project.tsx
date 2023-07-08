@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 import goBuyImage from '../../assets/img/png/go-buy.png';
 import medicalImage from '../../assets/img/png/medical.png';
@@ -24,7 +24,7 @@ function CardProjects() {
   const getImageByProject = (project: Project) => {
     switch (project.imagen) {
       case 'go-buy.png':
-        return goBuyImage;
+        return 'https://firebasestorage.googleapis.com/v0/b/portfolio-3ce56.appspot.com/o/projects%2Fgo-buy.png?alt=media&token=69d58e37-6b76-464a-9042-d838581f7a6b';
       case 'medical.png':
         return medicalImage;
       case 'hackaton.png':

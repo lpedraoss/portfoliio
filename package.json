@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@firebase/analytics": "^0.10.0",
+    "@firebase/storage": "^0.11.2",
+    "firebase": "^10.0.0",
     "react": "^18.2.0",
     "react-context": "^0.0.3",
     "react-dom": "^18.2.0",
