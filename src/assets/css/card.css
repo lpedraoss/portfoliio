@@ -1,11 +1,23 @@
 
+.cinta-horizontal {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cinta-horizontal::-webkit-scrollbar {
+  display: none;
+}
 
 .card {
+  scroll-snap-align: start;
   position: relative;
-  flex-shrink: 0; /* Evita que las tarjetas se reduzcan al desplazar */
+  flex-shrink: 0;
   width: 300px;
   height: 200px;
-  margin-right: 20px; /* Espacio entre las tarjetas */
+  margin-right: 20px;
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -20,7 +32,8 @@
   animation: heartbeat 1.5s infinite;
 }
 
-.card a, .card h2, .card p {
+.card a,
+.card span {
   color: var(--text-color);
 }
 
@@ -63,24 +76,4 @@
   100% {
     transform: scale(1);
   }
-}
-.cinta-horizontal {
-  display: flex;
-  overflow-x: hidden;
-}
-
-.cinta-horizontal .card {
-  flex-shrink: 0;
-  width: 300px;
-  height: 200px;
-  margin-right: 20px;
-  /* Resto del estilo de la tarjeta... */
-}
-
-.cinta-horizontal:hover {
-  cursor: grab;
-}
-
-.cinta-horizontal:active {
-  cursor: grabbing;
 }
