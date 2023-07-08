@@ -1,20 +1,35 @@
-
-import UseDataProduct from './card/use_project_data';
+import  { useState, useEffect } from 'react';
+import projects from '../../data/project.json';
 import Project from '../../interface/project_interface';
 
 function CardProjects() {
-  const { project } = UseDataProduct();
+  const [projectList, setProjectList] = useState<Project[]>([]);
+
+  useEffect(() => {
+    // Cargar las imágenes de los proyectos
+    const loadImages = async () => {
+      const updatedProjects = await Promise.all(
+        projects.map(async (project: Project) => {
+          const image = await import(`${project.imagen}`);
+          return { ...project, imagen: image.default };
+        })
+      );
+      setProjectList(updatedProjects);
+    };
+
+    loadImages();
+  }, []);
 
   return (
     <section className='card-container'>
-      {project.map((projectItem: Project, index: number) => (
-        <a key={index} href={projectItem.url} target="_blank" rel="noopener noreferrer">
+      {projectList.map((project: Project, index: number) => (
+        <a key={index} href={project.url} target="_blank" rel="noopener noreferrer">
           <article className="card">
             <picture>
-              <img src={projectItem.imagen} alt={projectItem.nombre} />
+              <img src={project.imagen} alt={project.nombre} />
             </picture>
             <div>
-              <span>{projectItem.nombre}</span>
+              <span>{project.nombre}</span>
             </div>
           </article>
         </a>
