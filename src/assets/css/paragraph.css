@@ -1,4 +1,4 @@
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 600px) {
     .intro-paragraph {
         font-size: 18px;
         line-height: 1.5;
@@ -10,14 +10,14 @@
     }
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 559px) {
     .intro-paragraph {
         font-size: 12px;
         line-height: 1.5;
         color: var(--text-color);
         justify-content:baseline;
         text-align:justify;
-        width: 20%;
+
         margin: 0 auto;
     }
 
