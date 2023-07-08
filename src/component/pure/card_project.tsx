@@ -1,10 +1,6 @@
 import  { useState, useEffect } from 'react';
 
-import goBuyImage from '../../assets/img/png/go-buy.png';
-import medicalImage from '../../assets/img/png/medical.png';
-import hackatonImage from '../../assets/img/png/hackaton.png';
-import springImage from '../../assets/img/png/spring.png';
-import dartImage from '../../assets/img/png/dart.png';
+
 
 import projectsData from '../../data/project.json';
 import Project from '../../interface/project_interface';
