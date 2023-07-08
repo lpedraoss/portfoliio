@@ -4,7 +4,7 @@ import Project from '../../interface/project_interface';
 
 function CardProjects() {
   const [projectList, setProjectList] = useState<Project[]>([]);
-  const [enableUrl, setEnableUrl] = useState<boolean>(true);
+  const [enableUrl, setEnableUrl] = useState<boolean>(false);
 
   useEffect(() => {
     const loadProjects = () => {
@@ -47,7 +47,7 @@ function CardProjects() {
   return (
     <section className='card-container'>
       {projectList.map((project, index) => (
-        <a key={index} href={getUrlProject(project)} target="_blank" rel="noopener noreferrer">
+        <a onClick={() => handleEnableUrl()} key={index} href={getUrlProject(project)} target="_blank" rel="noopener noreferrer">
           <div>
             <span>{project.nombre}</span>
           </div>
@@ -56,7 +56,7 @@ function CardProjects() {
               <img src={getImageByProject(project)} alt={project.nombre} />
             </picture>
           </article>
-          <button onClick={handleEnableUrl}></button>
+          
         </a>
       ))}
     </section>
