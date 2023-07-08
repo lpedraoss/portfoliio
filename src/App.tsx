@@ -1,7 +1,6 @@
 
 import './App.css'
 
-import imagen2 from './assets/img/png/character.png'
 
 import introduction from './data/introduction.json'
 import HeaderPort from './component/pure/header_portfolio';
