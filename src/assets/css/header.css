@@ -1,14 +1,13 @@
-
-    .header {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        position: relative;
-    }
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: relative;
+}
 
 .header-picture,
 .header-title,
@@ -17,9 +16,11 @@
     transform: translateY(-30px);
     animation: fadeInUp 5s forwards;
 }
-.header-picture img{
+
+.header-picture img {
     width: 85%;
 }
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
