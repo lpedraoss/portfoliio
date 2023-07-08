@@ -9,7 +9,12 @@
         opacity: 0;
         transition: opacity 0.3s ease;
     }
+
 }
+    .scroll-down a {
+        animation: bounce 1.5s infinite;
+        color: var(--text-color);
+    }
 
 #content {
     padding-top: 100px;
@@ -30,10 +35,7 @@
     pointer-events: none;
 }
 
-.scroll-down a {
-    animation: bounce 1.5s infinite;
-    color: var(--text-color);
-}
+
 
 @keyframes bounce {
 
