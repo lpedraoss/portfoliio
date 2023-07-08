@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'react';
-
-
-
 import projectsData from '../../data/project.json';
 import Project from '../../interface/project_interface';
 
-
 function CardProjects() {
   const [projectList, setProjectList] = useState<Project[]>([]);
+  const [enableUrl, setEnableUrl] = useState<boolean>(true);
 
   useEffect(() => {
     const loadProjects = () => {
@@ -32,11 +29,25 @@ function CardProjects() {
 
     }
   };
-
+  const getUrlProject = (project: Project|undefined) => {
+    let url;
+    if(enableUrl===true) {
+      url = project!.url
+     
+    }else{
+      url = undefined;
+    }
+    console.log('esto es: ',url)
+    return url; 
+    
+  };
+  const handleEnableUrl = () => {
+    setEnableUrl(!enableUrl);
+  };
   return (
     <section className='card-container'>
       {projectList.map((project, index) => (
-        <a key={index} href={project.url} target="_blank" rel="noopener noreferrer">
+        <a key={index} href={getUrlProject(project)} target="_blank" rel="noopener noreferrer">
           <div>
             <span>{project.nombre}</span>
           </div>
@@ -44,8 +55,8 @@ function CardProjects() {
             <picture>
               <img src={getImageByProject(project)} alt={project.nombre} />
             </picture>
-
           </article>
+          <button onClick={handleEnableUrl}></button>
         </a>
       ))}
     </section>
