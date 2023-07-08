@@ -1,62 +1,28 @@
 [
     {
-        "nombre": "Proyecto 1",
-        "url": "go-buy.vercel.app",
-        "imagen": "../../assets/img/png/character3.png"
+        "nombre": "Go buy",
+        "url": "https:go-buy.vercel.app",
+        "imagen": "../../assets/img/png/go-buy.png"
     },
     {
-        "nombre": "Proyecto 2",
-        "url": "https://www.ejemplo.com/proyecto2",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 3",
-        "url": "https://www.ejemplo.com/proyecto3",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 1",
-        "url": "https://www.ejemplo.com/proyecto1",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 2",
-        "url": "https://www.ejemplo.com/proyecto2",
-        "imagen": "../../assets/img/png/character3.png"
+        "nombre": "Medical only css and html",
+        "url": "https://medical-tau.vercel.app/",
+        "imagen": "../../assets/img/png/medical.png"
     },
     {
         "nombre": "Proyecto 3",
-        "url": "https://www.ejemplo.com/proyecto3",
-        "imagen": "../../assets/img/png/character3.png"
+        "url": "https://sivigila-hackaton.vercel.app/",
+        "imagen": "../../assets/img/png/hackaton.png"
     },
     {
         "nombre": "Proyecto 1",
-        "url": "https://www.ejemplo.com/proyecto1",
-        "imagen": "../../assets/img/png/character3.png"
+        "url": "https://github.com/lpedraoss/Medical-API.git",
+        "imagen": "../../assets/img/png/spring.png"
     },
     {
         "nombre": "Proyecto 2",
-        "url": "https://www.ejemplo.com/proyecto2",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 3",
-        "url": "https://www.ejemplo.com/proyecto3",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 1",
-        "url": "https://www.ejemplo.com/proyecto1",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 2",
-        "url": "https://www.ejemplo.com/proyecto2",
-        "imagen": "../../assets/img/png/character3.png"
-    },
-    {
-        "nombre": "Proyecto 3",
-        "url": "https://www.ejemplo.com/proyecto3",
-        "imagen": "../../assets/img/png/character3.png"
+        "url": "https://github.com/lpedraoss/monis.git",
+        "imagen": "../../assets/img/png/dart.png"
     }
+   
 ]
