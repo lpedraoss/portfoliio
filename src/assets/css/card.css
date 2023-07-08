@@ -1,15 +1,4 @@
 
-.cinta-horizontal {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.cinta-horizontal::-webkit-scrollbar {
-  display: none;
-}
 
 .card {
   scroll-snap-align: start;
@@ -76,4 +65,14 @@
   100% {
     transform: scale(1);
   }
+}
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+}
+/* Opcional: Agrega un espacio entre las tarjetas */
+.card-container .card {
+  margin-right: 20px;
 }
