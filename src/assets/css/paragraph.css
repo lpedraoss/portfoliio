@@ -17,7 +17,7 @@
         color: var(--text-color);
         justify-content:baseline;
         text-align:justify;
-
+        padding: 10px;
         margin: 10px auto;
     }
 
