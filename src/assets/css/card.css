@@ -18,6 +18,7 @@
 .card:hover {
   transform: scale(1.05);
   animation: heartbeat 1.5s infinite;
+  position: relative;
 }
 
 .card a,
@@ -72,6 +73,7 @@
   padding: 20px;
 }
 /* Opcional: Agrega un espacio entre las tarjetas */
-.card-container .card {
+.card-container .card, span {
   margin-right: 20px;
+  color: var(--text-color);
 }

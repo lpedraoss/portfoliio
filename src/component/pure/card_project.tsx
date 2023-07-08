@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 
@@ -29,7 +29,7 @@ function CardProjects() {
         return 'https://firebasestorage.googleapis.com/v0/b/portfolio-3ce56.appspot.com/o/projects%2Fspring.png?alt=media&token=367d15df-bc31-4e59-a909-2adf7ac291fb';
       case 'dart':
         return 'https://firebasestorage.googleapis.com/v0/b/portfolio-3ce56.appspot.com/o/projects%2Fdart.png?alt=media&token=e8bb717d-ade9-4919-b8ba-2b45592d3ea0';
-    
+
     }
   };
 
@@ -37,13 +37,14 @@ function CardProjects() {
     <section className='card-container'>
       {projectList.map((project, index) => (
         <a key={index} href={project.url} target="_blank" rel="noopener noreferrer">
+          <div>
+            <span>{project.nombre}</span>
+          </div>
           <article className='card'>
             <picture>
               <img src={getImageByProject(project)} alt={project.nombre} />
             </picture>
-            <div>
-              <span>{project.nombre}</span>
-            </div>
+
           </article>
         </a>
       ))}
