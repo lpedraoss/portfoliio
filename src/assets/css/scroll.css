@@ -11,15 +11,27 @@
     }
 
 }
-    .scroll-down a {
-        animation: bounce 1.5s infinite;
-        color: var(--text-color);
+@media screen and (max-width: 500px) {
+    .scroll-down {
+        position: fixed;
+        bottom: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 
+}
+.scroll-down a {
+    animation: bounce 1.5s infinite;
+    color: var(--text-color);
+}
+
 #content {
-    padding-top: 100px;
+    padding-top: 60px;
     /* Ajusta el valor según la altura de tu encabezado */
-    scroll-margin-top: 100px;
+    scroll-margin-top: 60px;
     /* Ajusta el valor según la altura de tu encabezado */
 
 }

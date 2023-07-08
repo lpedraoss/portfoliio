@@ -1,5 +1,4 @@
 
-@media screen and ( min-width: 600px) {
     .header {
         height: 100vh;
         display: flex;
@@ -10,25 +9,7 @@
         color: var(--text-color);
         position: relative;
     }
-    .header-picture img{
-        width: 85%;
-    }
-}
-@media screen and ( max-width: 559px) {
-    .header {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        position: relative;
-    }
-    .header-picture img{
-        width: 70%;
-    }
-}
+
 .header-picture,
 .header-title,
 .header p {
@@ -36,7 +17,9 @@
     transform: translateY(-30px);
     animation: fadeInUp 5s forwards;
 }
-
+.header-picture img{
+    width: 85%;
+}
 @keyframes fadeInUp {
     0% {
         opacity: 0;
