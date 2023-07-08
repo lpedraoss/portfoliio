@@ -1,7 +1,11 @@
+
+
 .card {
   position: relative;
+  flex-shrink: 0; /* Evita que las tarjetas se reduzcan al desplazar */
   width: 300px;
   height: 200px;
+  margin-right: 20px; /* Espacio entre las tarjetas */
   border: 2px solid var(--primary-color);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -35,6 +39,7 @@
 .card:hover::before {
   opacity: 1;
 }
+
 .card picture {
   display: block;
   width: 100%;
@@ -58,4 +63,24 @@
   100% {
     transform: scale(1);
   }
+}
+.cinta-horizontal {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.cinta-horizontal .card {
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  /* Resto del estilo de la tarjeta... */
+}
+
+.cinta-horizontal:hover {
+  cursor: grab;
+}
+
+.cinta-horizontal:active {
+  cursor: grabbing;
 }
