@@ -2,27 +2,27 @@
     {
         "nombre": "Go buy",
         "url": "https:go-buy.vercel.app",
-        "imagen": "go-buy.png"
+        "imagen": "go-buy"
     },
     {
         "nombre": "Medical only css and html",
         "url": "https://medical-tau.vercel.app/",
-        "imagen": "medical.png"
+        "imagen": "medical"
     },
     {
-        "nombre": "Proyecto 3",
+        "nombre": "Hackaton",
         "url": "https://sivigila-hackaton.vercel.app/",
-        "imagen": "hackaton.png"
+        "imagen": "hackaton"
     },
     {
-        "nombre": "Proyecto 1",
+        "nombre": "Spring boot",
         "url": "https://github.com/lpedraoss/Medical-API.git",
-        "imagen": "spring.png"
+        "imagen": "spring"
     },
     {
-        "nombre": "Proyecto 2",
+        "nombre": "Flutter",
         "url": "https://github.com/lpedraoss/monis.git",
-        "imagen": "dart.png"
+        "imagen": "dart"
     }
    
 ]
