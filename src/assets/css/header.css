@@ -16,8 +16,6 @@
     opacity: 0;
     transform: translateY(-30px);
     animation: fadeInUp 5s forwards;
-
-    
 }
 .header-picture img{
     width: 85%;
