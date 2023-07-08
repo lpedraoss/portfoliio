@@ -2,27 +2,27 @@
     {
         "nombre": "Go buy",
         "url": "https:go-buy.vercel.app",
-        "imagen": "../../assets/img/png/go-buy.png"
+        "imagen": "go-buy.png"
     },
     {
         "nombre": "Medical only css and html",
         "url": "https://medical-tau.vercel.app/",
-        "imagen": "../../assets/img/png/medical.png"
+        "imagen": "medical.png"
     },
     {
         "nombre": "Proyecto 3",
         "url": "https://sivigila-hackaton.vercel.app/",
-        "imagen": "../../assets/img/png/hackaton.png"
+        "imagen": "hackaton.png"
     },
     {
         "nombre": "Proyecto 1",
         "url": "https://github.com/lpedraoss/Medical-API.git",
-        "imagen": "../../assets/img/png/spring.png"
+        "imagen": "spring.png"
     },
     {
         "nombre": "Proyecto 2",
         "url": "https://github.com/lpedraoss/monis.git",
-        "imagen": "../../assets/img/png/dart.png"
+        "imagen": "dart.png"
     }
    
 ]

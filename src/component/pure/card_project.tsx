@@ -1,32 +1,49 @@
-import  { useState, useEffect } from 'react';
-import projects from '../../data/project.json';
+import React, { useState, useEffect } from 'react';
+
+import goBuyImage from '../../assets/img/png/go-buy.png';
+import medicalImage from '../../assets/img/png/medical.png';
+import hackatonImage from '../../assets/img/png/hackaton.png';
+import springImage from '../../assets/img/png/spring.png';
+import dartImage from '../../assets/img/png/dart.png';
+
+import projectsData from '../../data/project.json';
 import Project from '../../interface/project_interface';
+
 
 function CardProjects() {
   const [projectList, setProjectList] = useState<Project[]>([]);
 
   useEffect(() => {
-    // Cargar las imágenes de los proyectos
-    const loadImages = async () => {
-      const updatedProjects = await Promise.all(
-        projects.map(async (project: Project) => {
-          const image = await import(`${project.imagen}`);
-          return { ...project, imagen: image.default };
-        })
-      );
-      setProjectList(updatedProjects);
+    const loadProjects = () => {
+      setProjectList(projectsData);
     };
 
-    loadImages();
+    loadProjects();
   }, []);
+
+  const getImageByProject = (project: Project) => {
+    switch (project.imagen) {
+      case 'go-buy.png':
+        return goBuyImage;
+      case 'medical.png':
+        return medicalImage;
+      case 'hackaton.png':
+        return hackatonImage;
+      case 'spring.png':
+        return springImage;
+      case 'dart.png':
+        return dartImage;
+    
+    }
+  };
 
   return (
     <section className='card-container'>
-      {projectList.map((project: Project, index: number) => (
+      {projectList.map((project, index) => (
         <a key={index} href={project.url} target="_blank" rel="noopener noreferrer">
-          <article className="card">
+          <article className='card'>
             <picture>
-              <img src={project.imagen} alt={project.nombre} />
+              <img src={getImageByProject(project)} alt={project.nombre} />
             </picture>
             <div>
               <span>{project.nombre}</span>
