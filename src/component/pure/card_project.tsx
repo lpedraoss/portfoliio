@@ -1,5 +1,5 @@
-import  { useState, useEffect } from 'react';
-import projects from '../../data/project.json';
+import { useState, useEffect } from 'react';
+import projectsData from '../../data/project.json';
 import Project from '../../interface/project_interface';
 
 function CardProjects() {
@@ -9,8 +9,8 @@ function CardProjects() {
     // Cargar las imágenes de los proyectos
     const loadImages = async () => {
       const updatedProjects = await Promise.all(
-        projects.map(async (project: Project) => {
-          const image = await import(`${project.imagen}`);
+        projectsData.map(async (project: Project) => {
+          const image = await import(`${project.imagen}`); /* @vite-ignore */
           return { ...project, imagen: image.default };
         })
       );
